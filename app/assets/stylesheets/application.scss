@@ -13,3 +13,43 @@
 @import "layouts/index";
 @import "components/index";
 @import "pages/index";
+
+
+p {
+  font-size: 25px;
+  font-weight: lighter;
+  color: rgb(255, 255, 255);
+  opacity: 0.6;
+  margin-bottom: 30px;
+  font-family: 'Gudea', sans-serif;
+}
+
+a {
+  color: black;
+  font-family:'Gudea', sans-serif;
+  &:hover {
+    color: black;
+    font-decoration: none;
+  }
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  font-family: 'Monoton', cursive;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  font-family: 'Gudea', sans-serif;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: bold;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+  font-family: 'Gudea', sans-serif;
+}

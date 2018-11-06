@@ -1,0 +1,10 @@
+<h1>Index</h1>
+
+<p>
+<% @doses.each do |dose| %>
+<ul>
+<h5>Name = <%= dose.description %></h5>
+<li>Id = <%= dose.id %></li>
+</ul>
+<% end %>
+</p>

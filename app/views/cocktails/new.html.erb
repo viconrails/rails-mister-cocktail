@@ -1,0 +1,21 @@
+<body>
+
+<%= simple_form_for(@cocktail) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+
+  <div class="banner"  style="background-image: url('<%= image_path "mixologist" %>');">
+    <h2>Share your recipe</h2>
+    <div class="form-inputs">
+    <%= f.input :name, placeholder: "type your description here" %>
+    </div>
+
+<button type="button" class="btn-medium"><%= f.button :submit %></button>
+</div>
+
+<% end %>
+  </div>
+</div>
+
+</body>

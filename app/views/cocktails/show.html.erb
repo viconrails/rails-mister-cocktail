@@ -1,0 +1,16 @@
+<body>
+
+   <div class="banner" style="background-image: url('<%= image_path "bar" %>');">
+    <h1><%= @cocktail.name %></h1>
+    <% @cocktail_doses.each do |dose| %>
+    <p><%= dose.description %></p>
+    <% end %>
+    <button type="button" class="btn-medium"><%= link_to "add a dose", new_cocktail_dose_path(@cocktail) %></button>
+  </div>
+
+</body>
+
+
+
+
+

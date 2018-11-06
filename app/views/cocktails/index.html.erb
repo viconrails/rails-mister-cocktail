@@ -1,0 +1,35 @@
+
+<body>
+
+<div class="banner" style="background-image: url('<%= image_path "placeholder" %>');">
+
+  <div class="banner-content">
+    <h1>Welcome to Mr Cocktail</h1>
+    <p>Learn to mix with us</p>
+    <button type="button" class="btn-medium"><%= link_to "Start Now", new_cocktail_path %></button>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <% @cocktails.each do |cocktail| %>
+    <div class="col-xs-12 col-sm-4">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), <%= image_tag "shaker" %>>
+        <div class="card-description">
+         <h5>Name = <%= cocktail.name %></h5>
+          </p><%= link_to "see details", cocktail_path(cocktail.id) %></p>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
+
+</body>
+
+
+
+
+
+
+
