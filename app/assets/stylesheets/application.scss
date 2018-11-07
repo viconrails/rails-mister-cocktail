@@ -53,3 +53,8 @@ h2 {
   text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
   font-family: 'Gudea', sans-serif;
 }
+
+.min-height-100 {
+  padding-top: 70px;
+  min-height: calc(100vh - 100px);
+}
